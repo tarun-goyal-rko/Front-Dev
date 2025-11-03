@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #f8f8fb;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            padding: 3em 1em;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #d0dbeb;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(54, 75, 112, 0.12);
+            padding: 2em 1.4em;
+            width: 260px;
+            margin: 0.5em 0;
+            transition: box-shadow 0.3s;
+        }
+
+        .card-lead {
+            background: #e0fff5;
+            border: 2px solid #22b079;
+            box-shadow: 0 4px 14px rgba(34, 176, 121, 0.18);
+        }
+
+        .card h3 {
+            margin: 0.5em 0 0.3em 0;
+            font-size: 1.3em;
+        }
+
+        .card .role {
+            font-weight: 600;
+            font-size: 1em;
+            color: #2380a8;
+            margin-bottom: 0.5em;
+        }
+
+        .card p {
+            margin: 0.4em 0 0 0;
+            font-size: 0.97em;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card card-lead">
+            <h3>Aarav Verma</h3>
+            <div class="role">Team Lead</div>
+            <p> Overseeing project milestones and collaborating across teams.</p>
+        </div>
+        <div class="card">
+            <h3>Riya Singh</h3>
+            <div class="role">Developer</div>
+            <p> Focused on mobile app development and UI improvement.</p>
+        </div>
+        <div class="card">
+            <h3>Yash Patel</h3>
+            <div class="role">Designer</div>
+            <p> Creating clean, vibrant visuals for every screen.</p>
+        </div>
+    </div>
+</body>
+
+</html>

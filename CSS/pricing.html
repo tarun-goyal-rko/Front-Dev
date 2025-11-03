@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            background: #f0f6fa;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            padding: 3em 1em;
+            align-items: stretch;
+        }
+
+        .plan {
+            background: #fff;
+            border: 1.5px solid #aac8dd;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(100, 180, 220, 0.1);
+            padding: 2.2em 1.5em;
+            width: 260px;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .plan:hover {
+            background: #c6e2f5;
+            transform: scale(1.06);
+            box-shadow: 0 8px 24px rgba(0, 80, 170, 0.15);
+        }
+
+        .best {
+            border: 2.6px solid #1768ac;
+            background: #e6f2ff;
+        }
+
+        .plan h2 {
+            margin: 0 0 0.4em 0;
+            font-size: 1.5em;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 0.7em 0 1.2em 0;
+        }
+
+        .features li {
+            margin-bottom: 0.4em;
+            font-size: 1em;
+        }
+
+        .price {
+            font-size: 1.8em;
+            color: #1768ac;
+            font-weight: 700;
+            margin-bottom: .4em;
+        }
+
+        .plan a {
+            text-decoration: none;
+            background: #1768ac;
+            color: #fff;
+            padding: .5em 2em;
+            margin-top: 1em;
+            border-radius: 7px;
+            font-size: 1em;
+            transition: background 0.2s;
+            border: none;
+            outline: none;
+        }
+
+        .plan a:hover {
+            background: #34a0a4;
+        }
+
+        
+
+            .plan {
+                width: 98%;
+                min-width: 200px;
+            }
+        
+    </style>
+</head>
+
+<body>
+    <div class="plans">
+        <div class="plan">
+            <h2>Basic</h2>
+            <ul class="features">
+                <li>Single User Access</li>
+                <li>No Customization</li>
+                <li>Email Support</li>
+            </ul>
+            <div class="price">&#8377;199</div>
+            <a href="#">Choose</a>
+        </div>
+        <div class="plan best">
+            <h2>Standard</h2>
+            <ul class="features">
+                <li>Multi User Access</li>
+                <li>Custom Branding</li>
+                <li>Priority Support</li>
+            </ul>
+            <div class="price">&#8377;499</div>
+            <a href="#">Choose</a>
+        </div>
+        <div class="plan">
+            <h2>Premium</h2>
+            <ul class="features">
+                <li>Unlimited Users</li>
+                <li>Advanced Analytics</li>
+                <li>Dedicated Manager</li>
+            </ul>
+            <div class="price">&#8377;999</div>
+            <a href="#">Choose</a>
+        </div>
+    </div>
+</body>
+
+</html>

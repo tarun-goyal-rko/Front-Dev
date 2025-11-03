@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box Mastery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #f3f6fb;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            background: rgba(23, 64, 114, 0.95);
+            color: #fff;
+            padding: 1.3em 3em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: #a6d9fd;
+            margin: 0 1.3em;
+            text-decoration: none;
+        }
+
+        .hero {
+            position: relative;
+            background: url('heroimg.jpg') center/cover no-repeat;
+            height: 40vh;
+            min-height: 270px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 4px solid #174072;
+        }
+
+        .hero-text {
+            position: absolute;
+            color: #fff;
+            font-size: 2.6em;
+            font-weight: 700;
+            background: rgba(23, 64, 114, 0.55);
+            padding: 1em 3em;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            align-items: center;
+            margin-top: 3em;
+        }
+
+        .about-text {
+            flex: 2;
+            padding: 1em;
+            border-radius: 10px;
+            background: #eaf6fb;
+            font-size: 1.15em;
+            margin: 1em;
+            outline: 2px dashed #174072;
+        }
+
+        .about-img {
+            flex: 1;
+            min-width: 180px;
+            padding: 1em;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 13px;
+        }
+
+        .services {
+            display: flex;
+            gap: 2em;
+            justify-content: center;
+            margin: 3em 0;
+            background: linear-gradient(135deg, #1768ac, white);
+            padding: 2em 0;
+        }
+
+        .service-box {
+            background: rgba(95, 155, 212, 0.18);
+            padding: 2em 1.5em;
+            margin: 0;
+            border-radius: 13px;
+            border: 2px solid #1768ac;
+            min-width: 185px;
+            box-shadow: 0 4px 18px rgba(95, 155, 212, 0.11);
+            font-size: 1.12em;
+        }
+
+        .contact {
+            max-width: 500px;
+            margin: 3em auto;
+            background: #ede9fb;
+            padding: 2em 1.5em;
+            border-radius: 12px;
+            border: 1.3px solid #b77ac9;
+            box-shadow: 0 3px 20px rgba(183, 122, 201, 0.13);
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact label {
+            margin-bottom: 0.4em;
+        }
+
+        .contact input,
+        .contact textarea {
+            margin-bottom: 0.9em;
+            padding: 0.7em;
+            border-radius: 7px;
+            outline: none;
+            border: 1.3px solid #b77ac9;
+            font-size: 1em;
+        }
+
+        .contact input:focus,
+        .contact textarea:focus {
+            border-color: #6c63ff;
+        }
+
+        .footer {
+            background: #174072;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em 0;
+            margin-top: 3em;
+            font-size: 0.98em;
+        }
+
+        @media (max-width:800px) {
+            .about {
+                flex-direction: column;
+            }
+
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <span>Mastery of CSS Box Model</span>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">Mastery of CSS Box Model</div>
+    </section>
+    <section class="about">
+        <div class="about-text">
+            <h2 style="margin-top:0;">About Us</h2>
+            Passionate creators building modern, effective web solutions for startups and businesses.
+        </div>
+        <div class="about-img">
+            <img src="aboutus.png" alt="Team">
+        </div>
+    </section>
+    <section class="services">
+        <div class="service-box">Design</div>
+        <div class="service-box">Development</div>
+        <div class="service-box">Deployment</div>
+    </section>
+    <section class="contact">
+        <form>
+            <label for="cname">Name</label>
+            <input type="text" id="cname">
+            <label for="cemail">Email</label>
+            <input type="email" id="cemail">
+            <label for="cmsg">Message</label>
+            <textarea id="cmsg" rows="4"></textarea>
+            <button type="submit"
+                style="background:#6c63ff; color:#fff; border:none; border-radius:6px; padding:.7em 0; margin-top:.5em;">Send</button>
+        </form>
+    </section>
+    <div class="footer">&copy; 2025 CSS Box Model</div>
+</body>
+
+</html>

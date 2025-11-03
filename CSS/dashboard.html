@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background: #f6f8fa;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #232963;
+            color: #fff;
+            padding: 1.3em 0 1em 2em;
+            z-index: 22;
+        }
+
+        .wrapper {
+            display: flex;
+            margin-top: 70px;
+            min-height: calc(100vh - 55px);
+        }
+
+        aside {
+            background: #31428a;
+            color: #fff;
+            min-width: 170px;
+            padding: 2em 1em 2em 1em;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav a {
+            color: #a6d9fd;
+            text-decoration: none;
+            margin-bottom: 1.5em;
+            font-size: 1.17em;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+            padding: 2em 2em;
+        }
+
+        .box {
+            background: #fff;
+            box-shadow: 0 2px 13px rgba(49, 66, 138, 0.11);
+            border-radius: 13px;
+            padding: 2em 1.3em;
+            margin-bottom: 1em;
+        }
+
+        @media (max-width:600px) {
+            .wrapper {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+                min-width: unset;
+                height: auto;
+                flex-direction: row;
+                justify-content:end ;
+            }
+
+            nav a {
+                margin: 0 1em 0 1em;
+            }
+
+            main {
+                padding: 1.2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header><b>My Dashboard</b></header>
+    <div class="wrapper">
+        <aside>
+            <nav>
+                <a href="#">Overview</a>
+                <a href="#">Projects</a>
+                <a href="#">Settings</a>
+            </nav>
+        </aside>
+        <main>
+            <div class="box">Content Box 1</div>
+            <div class="box">Content Box 2</div>
+        </main>
+    </div>
+</body>
+
+</html>

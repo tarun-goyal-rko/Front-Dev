@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            background: #eaf4fa;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.6em;
+            max-width: 1000px;
+            margin: 3em auto;
+            padding: 1em;
+        }
+
+        .photo {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(23, 64, 114, 0.11);
+            cursor: pointer;
+            transition: box-shadow .25s;
+        }
+
+        .photo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transition: transform .3s;
+        }
+
+        .photo:hover img {
+            transform: scale(1.1);
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(23, 64, 114, 0.78);
+            color: #fff;
+            text-align: center;
+            font-size: 1.02em;
+            padding: .4em 0;
+            opacity: 0;
+            transition: opacity .3s;
+        }
+
+        .photo:hover .caption {
+            opacity: 1;
+        }
+
+        @media (max-width:650px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="photo"><img src="nature.png" alt="Nature">
+            <div class="caption">Nature</div>
+        </div>
+        <div class="photo"><img src="travel.png" alt="Travel">
+            <div class="caption">Travel</div>
+        </div>
+        <div class="photo"><img src="culture.png" alt="Culture">
+            <div class="caption">Culture</div>
+        </div>
+        <div class="photo"><img src="street.png" alt="Street">
+            <div class="caption">Street</div>
+        </div>
+        <div class="photo"><img src="food.png" alt="Food">
+            <div class="caption">Food</div>
+        </div>
+        <div class="photo"><img src="festival.png" alt="Festival">
+            <div class="caption">Festival</div>
+        </div>
+    </div>
+</body>
+
+</html>

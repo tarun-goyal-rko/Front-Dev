@@ -1,0 +1,51 @@
+<!-- Create a Webpage Demonstrating Pseudo-Classes
+Requirements:
+● Show examples of pseudo-classes such as :hover, :focus, :active,
+and :nth-child().
+● Apply these selectors on links, buttons, and list items.
+● Use color or background changes to show state differences.
+● Include short text explaining each pseudo-class beside its
+example.
+● Use Flexbox to align all examples neatly in one row. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pseudo-Class Demonstration</title>
+<link rel="stylesheet" href="style7.css">
+</head>
+<body>
+  <h1>Pseudo-Class Demonstration</h1>
+  
+  <div class="examples">
+    <div class="card">
+      <h2>:hover / :focus / :active (Link)</h2>
+      <p class="example-item">
+        <a href="#" class="demo-link">Hover or Click Me</a>
+      </p>
+      <small>Shows color + background changes for different link states.</small>
+    </div>
+
+    <div class="card">
+      <h2>:hover / :focus / :active (Button)</h2>
+      <p class="example-item">
+        <button class="demo-btn">Press Me</button>
+      </p>
+      <small>Hover to brighten, focus shows ring, active shrinks slightly.</small>
+    </div>
+
+    <div class="card">
+      <h2>:nth-child() (List)</h2>
+      <ul class="demo-list">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+      </ul>
+      <small>Odd items have a darker background; hover highlights all.</small>
+    </div>
+  </div>
+</body>
+</html>
